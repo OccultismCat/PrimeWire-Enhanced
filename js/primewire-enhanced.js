@@ -14,6 +14,7 @@
 // ==/UserScript==
 (function () {
     'use strict';
+    const watch_movie_pattern = /^https:\/\/primewire\.mx\/watch-movie\//;
 
     function log(text) {
         log('[PrimeWire-Enhanced]\n' + text);
@@ -23,21 +24,22 @@
         alert('[PrimeWire-Enhanced]\n' + text);
     }
 
-    function start_loop(func) {
+    function start_loop(func, int) {
         setInterval(function () {
-            //log_alert('loop');
             func();
-        }, 2500)
+        }, int)
     }
 
     function remove_element(element) {
-        if (element != null) {
-            //log_alert('[Press or Hold "ESC" Key To Quickly Read Alerts!]\n\n[Removing element]\n' + element.innerHTML);
+        if (element != null && element != undefined) {
             element.remove();
+            //log_alert('[Press or Hold "ESC" Key To Quickly Read Alerts!]\n\n[Removing element]\n' + element.innerHTML);
         }
     }
 
     function remove_elements() {
+        const share_popup = document.querySelector('[class="text-close"]');
+        const ad_video = document.querySelector("#content-episodes > div > div > video")
         const movie_header = document.querySelector('[id="header"]');
         const movie_top_navigation_bar = document.querySelector('[class="prebreadcrumb"]');
         const movie_synopsis = document.querySelector('[class="block_area block_area_home section-description"]');
@@ -49,43 +51,28 @@
         const movie_navigation = document.querySelector('[class="f2r-left"]');
         const movie_footer = document.querySelector('[id="footer"]');
         const movie_blank_footer = document.querySelector('[id="st-1"]');
-        if (movie_header != null) {
-            remove_element(movie_header);
+        const movie_episodes = document.querySelector('[id="content-episodes"]');
+        if (share_popup != null) {
+            share_popup.click();
         }
-        if (movie_top_navigation_bar != null) {
-            remove_element(movie_top_navigation_bar);
+        if (watch_movie_pattern.test(window.location.href)){
+            remove_element(movie_episodes)
         }
-        if (movie_synopsis != null) {
-            remove_element(movie_synopsis);
-        }
-        if (movie_discription != null) {
-            remove_element(movie_discription);
-        }
-        if (movie_top_removed_imgur_image != null) {
-            remove_element(movie_top_removed_imgur_image);
-        }
-        if (movie_player_rating_bar != null){
-            remove_element(movie_player_rating_bar);
-        }
-        if (movie_removed_imgur_image != null) {
-            remove_element(movie_removed_imgur_image);
-        }
-        if (movie_you_may_also_like != null) {
-            remove_element(movie_you_may_also_like);
-        }
-        if (movie_navigation != null) {
-            remove_element(movie_navigation);
-        }
-        if (movie_footer != null) {
-            remove_element(movie_footer);
-        }
-        if (movie_blank_footer != null) {
-            remove_element(movie_blank_footer);
-        }
+        remove_element(ad_video);
+        remove_element(movie_header);
+        remove_element(movie_top_navigation_bar);
+        remove_element(movie_synopsis);
+        remove_element(movie_discription);
+        remove_element(movie_top_removed_imgur_image);
+        remove_element(movie_player_rating_bar);
+        remove_element(movie_removed_imgur_image);
+        remove_element(movie_you_may_also_like);
+        remove_element(movie_navigation);
+        remove_element(movie_footer);
+        remove_element(movie_blank_footer);
     }
 
     function customize_elements() {
-        //log_alert('Applying custom element styles!')
         const movie_alert_banner = document.querySelector('[class="alert mb-3"]');
         const movie_player_area = document.querySelector('[class="watching_player-area"]');
         const movie_watch_block = document.querySelector('[id="watch-block"]');
@@ -94,13 +81,13 @@
         const background_episodes = document.querySelector('[class="seasons-list seasons-list-new border-bottom-block"]');
         const background_page = document.querySelector('[id="wrapper"]');
         if (movie_alert_banner != null){
-            //log_alert('Setting custom banner style!')
-            movie_alert_banner.textContent = '[PrimeWire-Enhanced]'
+            movie_alert_banner.textContent = '[PrimeWire.mx-Enhanced]'
+            movie_alert_banner.style.background = 'red'
         }
         if (movie_player_area != null){
-            //log_alert('Setting custom style!')
-            movie_player_area.setAttribute('style', 'transform: translateY(-192px); height: 846px;')
-            //movie_player_area.setAttribute('style', 'transform: translateX(-610px) translateY(-252px); width: 1900px; height: 860px;')
+            // Will be adding buttons to switch sizes in the future.
+            // 1920, 1080: Half Window | movie_player_area.setAttribute('style', 'transform: translateY(-192px); height: 846px;')
+            // 1920, 1080: Full Window | movie_player_area.setAttribute('style', 'transform: translateX(-610px) translateY(-252px); width: 1900px; height: 860px;')
         }
         if (movie_episodes != null){
             movie_episodes.setAttribute('style', 'transform: translateY(-101px);');
