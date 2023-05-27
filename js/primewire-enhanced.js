@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Primewire Enhanced (GitHub)
 // @namespace    https://github.com/OccultismCat/PrimeWire-Enhanced/
-// @version      0.0.5
+// @version      0.0.6
 // @description  Make improvements to primewire.mx website.
 // @author       OccultismCat
 // @run-at       document-start
@@ -86,7 +86,7 @@
         }
         if (movie_player_area != null){
             // Will be adding buttons to switch sizes in the future.
-            // 1920, 1080: Half Window | movie_player_area.setAttribute('style', 'transform: translateY(-192px); height: 846px;')
+            movie_player_area.setAttribute('style', 'transform: translateY(-192px); height: 846px;') // 1920, 1080: Half Window | 
             // 1920, 1080: Full Window | movie_player_area.setAttribute('style', 'transform: translateX(-610px) translateY(-252px); width: 1900px; height: 860px;')
         }
         if (movie_episodes != null){
