@@ -1,5 +1,5 @@
 # PrimeWire Enhanced
-A userscript for [PrimeWire](primewire.mx) to improve viewing experience!
+A userscript for [primewire.mx](https://primewire.mx/) to improve viewing experience!
 
 ## Features
 * Removes clutter/elements when using video player.
