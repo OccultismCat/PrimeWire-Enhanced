@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Primewire Enhanced (GitHub)
 // @namespace    https://github.com/OccultismCat/PrimeWire-Enhanced/
-// @version      0.0.1
+// @version      0.0.2
 // @description  Make improvements to primewire.mx website.
 // @author       OccultismCat
 // @run-at       document-start
