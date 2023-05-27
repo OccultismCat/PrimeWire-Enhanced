@@ -124,15 +124,16 @@
             var src = scripts[i].src
             var type = scripts[i].type
             if (src != null && src != '' && src != undefined){
-                if (type != null && type != '' && type != undefined)
-                log(src + '\n\n' + type)
+                if (type != null && type != '' && type != undefined){
+                    log(src + '\n\n' + type)
+                }
             }
         }
     }
 
     window.addEventListener("load", () => {
         if (document.readyState == 'complete'){
-            log_alert("\nAlerts bypass PrimeWire's scripts to load this script!\n\n" + 'Press "OK" or "ESC" to continue!')
+            log_alert("\nAlerts bypass PrimeWire's scripts to load this script!\n\nPress 'OK' or 'ESC' to continue!")
             remove_elements();
             setTimeout(customize_elements, 1000)
             //customize_elements();
