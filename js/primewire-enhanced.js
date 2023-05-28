@@ -1,20 +1,20 @@
 // ==UserScript==
 // @name         Primewire Enhanced (GitHub)
 // @namespace    https://github.com/OccultismCat/PrimeWire-Enhanced/
-// @version      0.0.7
+// @version      0.0.8
 // @description  Make improvements to primewire.mx website.
 // @author       OccultismCat
-// @run-at       document-start
-// @compatible   brave, chrome, opera, firefox
 // @license      CC-BY-ND-4.0
 // @github       https://github.com/OccultismCat/PrimeWire-Enhanced
 // @homepage     https://greasyfork.org/en/scripts/467288-primewire-enhanced-github
+// @supportURL   https://github.com/OccultismCat/PrimeWire-Enhanced/issues
 // @installURL   https://greasyfork.org/scripts/467288-primewire-enhanced-github/code/Primewire%20Enhanced%20(GitHub).user.js
 // @updateURL    https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/js/primewire-enhanced.js
 // @downloadURL  https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/js/primewire-enhanced.js
+// @icon         https://img.primewire.mx/xxrz/100x100/100/6b/7f/6b7f3c90b5c755ee097086a92182f144/6b7f3c90b5c755ee097086a92182f144.png
 // @match        https://primewire.mx/watch-tv/*
 // @match        https://primewire.mx/watch-movie/*
-// @icon         https://img.primewire.mx/xxrz/100x100/100/6b/7f/6b7f3c90b5c755ee097086a92182f144/6b7f3c90b5c755ee097086a92182f144.png
+// @run-at       document-start
 // ==/UserScript==
 (function () {
     'use strict';
