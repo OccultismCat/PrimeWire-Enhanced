@@ -1,11 +1,15 @@
 // ==UserScript==
 // @name         Primewire Enhanced (GitHub)
 // @namespace    https://github.com/OccultismCat/PrimeWire-Enhanced/
-// @version      0.0.6
+// @version      0.0.7
 // @description  Make improvements to primewire.mx website.
 // @author       OccultismCat
 // @run-at       document-start
-// @homepage     https://github.com/OccultismCat/PrimeWire-Enhanced
+// @compatible   brave, chrome, opera, firefox
+// @license      CC-BY-ND-4.0
+// @github       https://github.com/OccultismCat/PrimeWire-Enhanced
+// @homepage     https://greasyfork.org/en/scripts/467288-primewire-enhanced-github
+// @installURL   https://greasyfork.org/scripts/467288-primewire-enhanced-github/code/Primewire%20Enhanced%20(GitHub).user.js
 // @updateURL    https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/js/primewire-enhanced.js
 // @downloadURL  https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/js/primewire-enhanced.js
 // @match        https://primewire.mx/watch-tv/*
