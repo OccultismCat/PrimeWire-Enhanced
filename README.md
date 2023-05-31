@@ -7,9 +7,9 @@ A userscript for [primewire.mx](https://primewire.mx/) to improve viewing experi
 * Improves size of video player.
 
 ## Recommended Extensions.
-1. [Tampermonkey](https://www.tampermonkey.net/) - Userscript loader.
-2. [uBlock Origin](https://ublockorigin.com/) - Adblocker.
-3. [Pop Up Blocker](https://poperblocker.com/) - Pop Up Blocker.
+* [Tampermonkey](https://www.tampermonkey.net/) - Userscript loader.
+* [uBlock Origin](https://ublockorigin.com/) - Adblocker.
+* [Pop Up Blocker](https://poperblocker.com/) - Pop Up Blocker.
 
 ## Install.
 ### 1st Method.
