@@ -31,3 +31,4 @@ new empty userscript with [Tampermonkey](https://www.tampermonkey.net/) then sav
 ## Previews
 ![PrimeWire-Enhanced-Preview-1](https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/resources/previews/PrimeWire-Enhanced-Preview-1.png)
 ![PrimeWire-Enhanced-Preview-2](https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/resources/previews/PrimeWire-Enhanced-Preview-2.png)
+![PrimeWire-Enhanced-Preview-3](https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/resources/previews/PrimeWire-Enhanced-Preview-3.png)
