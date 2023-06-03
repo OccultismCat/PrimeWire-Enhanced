@@ -27,3 +27,7 @@ new empty userscript with [Tampermonkey](https://www.tampermonkey.net/) then sav
 5. Paste url from step 4 into "Import from URL".
 6. Click "Install".
 7. Click "Install" again.
+
+## Previews
+![PrimeWire-Enhanced-Preview-1.png](https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/resources/previews/PrimeWire-Enhanced-Preview-1.png)
+![PrimeWire-Enhanced-Preview-2.png](https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/resources/previews/PrimeWire-Enhanced-Preview-2.png)
