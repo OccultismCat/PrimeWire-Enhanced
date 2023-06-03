@@ -12,14 +12,14 @@ A userscript for [primewire.mx](https://primewire.mx/) to improve viewing experi
 * [Pop Up Blocker](https://poperblocker.com/) - Pop Up Blocker.
 
 ## Install.
-<ins>**1st Method.**</ins>
+**<ins>1st Method.</ins>**
 * Install userscript from [greasyfork.org](https://greasyfork.org/en/scripts/467288-primewire-enhanced-github) with [Tampermonkey](https://www.tampermonkey.net/).
 
-<ins>**2nd Method.**</ins>
+**<ins>2nd Method.</ins>**
 * Copy and paste the code from [primewire-enhanced.js](https://raw.githubusercontent.com/OccultismCat/PrimeWire-Enhanced/main/js/primewire-enhanced.js) into a 	
 new empty userscript with [Tampermonkey](https://www.tampermonkey.net/) then save it.
 
-<ins>**3rd Method.**</ins>
+**<ins>3rd Method.</ins>**
 1. Click on the [Tampermonkey](https://www.tampermonkey.net/) extension at the top of your browser.
 2. Click on "Dashboard".
 3. Go to "Utilities".
